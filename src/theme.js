@@ -1,12 +1,17 @@
 export default {
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
+    body: '"Avenir Next", sans-serif',
+    heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
   colors: {
     text: '#000',
     background: '#fff',
     primary: '#33e',
+  },
+  styles: {
+    root: {
+      fontFamily: 'body',
+    },
   },
 }
