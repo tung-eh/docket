@@ -19,4 +19,12 @@ export default {
       fontFamily: 'body',
     },
   },
+  buttons: {
+    primary: {
+      cursor: 'pointer',
+    },
+    icon: {
+      cursor: 'pointer',
+    },
+  },
 }

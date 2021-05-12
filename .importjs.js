@@ -1,4 +1,7 @@
 module.exports = {
+  aliases: {
+    anime: 'animejs',
+  },
   namedExports: {
     react: [
       'useState',
