@@ -33,7 +33,7 @@ const NewButton = () => {
 
 const SideBar = (props) => (
   <Box sx={{ borderRight: '1px solid', borderColor: 'lightGray' }} {...props}>
-    <Logo pb={5} />
+    <Logo mb={5} />
     <NewButton />
   </Box>
 )

@@ -14,4 +14,9 @@ export default {
       fontFamily: 'body',
     },
   },
+  forms: {
+    input: {
+      fontFamily: 'body',
+    },
+  },
 }
