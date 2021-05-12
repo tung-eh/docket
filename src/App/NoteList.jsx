@@ -12,13 +12,14 @@ const notes = [
   },
   {
     content:
-      '13 things you should give up if you want to be a successful UX Designer',
+      '13 things You should give up if You want to be a successful UX Designer',
     date: 'May 15, 2021',
     color: '#f0a177',
+    star: true,
   },
 ]
 
-const NoteItem = ({ content, date, color }) => (
+const NoteItem = ({ content, date, color, star }) => (
   <Flex
     sx={{
       flexDirection: 'column',
@@ -29,11 +30,28 @@ const NoteItem = ({ content, date, color }) => (
       height: 260,
       fontWeight: 500,
     }}
-    p={4}
-    pb={3}
-    pr={3}
+    p={3}
+    pl={4}
   >
-    {content}
+    <Box>
+      <IconButton
+        sx={{
+          bg: 'black',
+          borderRadius: '50%',
+          boxSizing: 'content-box',
+          width: 'auto',
+          height: 'auto',
+          float: 'right',
+          visibility: star ? 'visible' : 'hidden',
+        }}
+        p="10px"
+        ml={4}
+        mb={4}
+      >
+        <Icon name="star" width={16} height={16} color="#ffcf7d" />
+      </IconButton>
+      <Box mt={2}>{content}</Box>
+    </Box>
     <Flex sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
       <Box sx={{ fontWeight: 400, fontSize: 1 }}>{date}</Box>
       <IconButton
