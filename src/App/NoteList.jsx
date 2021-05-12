@@ -24,7 +24,7 @@ const NoteItem = ({ content, date, color }) => (
       flexDirection: 'column',
       justifyContent: 'space-between',
       bg: color,
-      borderRadius: 15,
+      borderRadius: 20,
       width: 260,
       height: 260,
       fontWeight: 500,

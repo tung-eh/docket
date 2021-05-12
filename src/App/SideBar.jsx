@@ -14,8 +14,14 @@ const NewButton = () => {
   return (
     <Flex sx={{ flexDirection: 'column', alignItems: 'center' }}>
       <IconButton
-        sx={{ bg: 'black', boxSizing: 'content-box', borderRadius: '50%' }}
-        p="10px"
+        sx={{
+          bg: 'black',
+          boxSizing: 'content-box',
+          borderRadius: '50%',
+          width: 'auto',
+          height: 'auto',
+        }}
+        p="12px"
         mb="34px"
       >
         <Icon name="plus" />
